@@ -1,1 +1,7 @@
-<p>team works!</p>
+<table class="row" *ngIf="element.isOpenBox">
+  <tr *ngFor="let team of element.teamsArray; let indexOfArray=index">
+    <td>{{indexOfArray}}</td>
+    <td>{{team[0]}}</td>
+    <td><img layout="column" *ngIf="team[1]!==null" class="img-responsive" src={{team[1]}} alt="missing image"></td>
+  </tr>
+</table>
