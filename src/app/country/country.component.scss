@@ -1,0 +1,34 @@
+div{
+  background: antiquewhite;
+  text-align: center;
+  align-self: center;
+  button {
+    color: red;
+    background: aqua;
+    display: inline;
+    padding: 20px;
+    margin: 20px;
+  }
+}
+
+table {
+  background: azure;
+  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
+  border: 3px solid black;
+  tr{
+    td{
+      border-bottom :1px solid grey;
+      border-left :1px solid grey;
+    }
+  }
+}
+
+img{
+  margin-outside: 100px;
+  height: 30px;
+  width: 40px;
+}
+
+

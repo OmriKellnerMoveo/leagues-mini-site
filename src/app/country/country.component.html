@@ -1,0 +1,13 @@
+<div>
+  <button (click)="displayAllTeams(country_name)" *ngFor="let country_name of country_names">
+    {{country_name}}
+  </button>
+<h1 *ngIf="isOpenBox">   {{selectedCountry}} Teams: ({{teamsArray.length}})</h1>
+<table class="row" *ngIf="isOpenBox">
+  <tr *ngFor="let team of teamsArray; let indexOfArray=index">
+    <td>{{indexOfArray}}</td>
+    <td>{{team[0]}}</td>
+    <td><img layout="column" *ngIf="team[1]!==null" class="img-responsive" src={{team[1]}} alt="missing image"></td>
+  </tr>
+</table>
+</div>
